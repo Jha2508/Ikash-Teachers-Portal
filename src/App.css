@@ -1,38 +1,247 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+.attendancetable{
+  width: 70%
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.periods{
+  margin-left: 100px;
+  width:50%;
+  margin-right: 100px;
+}
+.teacherid{
+  margin-top: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.addnotice{
+  margin-top: 30px;
+  margin-right: 0px;
+}
+.singlenotice{
+  margin: 10px;
+}
+.noticeimg{
+  width:250px;
+  height:250px
+}
+.tanotice{
+  margin-top: 30px;
+}
+
+.leftalign{
+  text-align: left;
+}
+.rightalign{
+  text-align: right;
+}
+
+.teacherdet{
+  color :whitesmoke;
+  font-family:'caveat',cursive ;
+  font-size: 30px;
+}
+.ounded{
+  border-radius: 50%;
+}
+.schoolname{
+  
+  color: wheat;
+}
+.sidebar-footer{
+  color: wheat;
+}
+.nav-link{
+  
+  font-family: 'Cinzel',serif;
+}
+
+@media only screen and (min-width:768px){
+  .card{
+    position: relative;
   }
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+  
+.datetimemobile{
+  display: none;
+}
+  .nav-link{
+    line-height: 15px;
+  }
+  .datetimepc{
+    display: block;
+    position: absolute;
+    width: 220px;
+    color:whitesmoke;
+    font-family: algerian;
+    font-size: 20px;
+    background-color: black;
+    top:-30px;
+    border-radius: 30px 30px 0 0;
+    right:10px;
+  }
+  .sidebar{
+    box-shadow: 4px 3px 5px grey;
+  width:300px;
+  }
+  .sidebar-footer{
+    margin-top: 70px;
+  }
+  .menus{
+    margin-top: 70px;
+  }
+  .navbar{
+    display: none;
+  }
+  
+.marginl{
+  margin-left: 16.67%;
+}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0px;
+  /* rtl:raw:
+  right: 0;
+  */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 0 0 0; /* Height of navbar */
+  background-color: #00264A;
+
+}
+
+.input-group{
+  display:block
+}
+@media only screen and (max-width: 767.98px) {
+  .sidebar {
+    top: 2rem;
+  }
+  .nav-link{
+    line-height: 8px;
+  }
+.datetimemobile{
+  display: block;
+}
+.datetimepc{
+  display:none;
+}
+.attendancetable{
+  width: 95%
+}
+.noticeimg{
+  width:200px;
+  height:200px
+}
+  
+.addnotice{
+  margin-left: 12vw;
+  margin-right: 0px;
+}
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar .nav-link.active {
+  color: #007bff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+.sidebar-footer{
+  margin-top: 40px;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
