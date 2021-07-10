@@ -8,9 +8,8 @@ function AddNotice() {
       <div className='col-sm'>
         <form className='leftalign'>
           <label htmlFor='titlenotice'><b>Title of the notice : </b>&nbsp;</label>
-          <input id='titlenotice' type='text' placeholder='Enter title here' /><br />
-          <textarea rows='10' cols='30' placeholder='Enter The Notice matter here' className='tanotice' />
-          <button className='btn btn-outline-danger m-4'>Post</button>
+          <input id='titlenotice' className='custominputresult' type='text' placeholder='Enter title here' /><br />
+          <textarea rows='10' cols='30' placeholder='Enter The Notice matter here' className='tanotice tanoticemodal' />
         </form>
       </div>
     </div>
@@ -66,6 +65,9 @@ function NoticeBoard() {
               <div className="modal-body">
                 <AddNotice/>
                 </div>
+                <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" >Post</button>
+    </div>
             </div>
           </div>
         </div>

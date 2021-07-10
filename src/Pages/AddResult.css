@@ -1,3 +1,84 @@
-.resultadd input{
-    border-radius: 20px;
+
+
+.subjectname{
+    margin-left:70px;
+    width: 280px;
+    height: 40px;
+    margin-top: -5px;
 }
+.flexing{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.marginlforresult{
+    margin-left: 20px;
+  }
+  
+  .custominputresult{
+    width: 280px;
+    height: 40px;
+    margin-top: -5px;
+    
+    border-radius: 20px;
+  }
+.classes{
+    margin-left: 80px;
+    margin-top:-5px;
+    border-radius:20px;
+  }
+.btnaddresult{
+  border-radius: 15px;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+.uploadbtn{
+border-radius: 15px;
+margin-top:-30px;
+padding-top:0;
+padding-bottom: 0;
+}
+.tableinput{
+  width: 280px;
+  height: 40px;
+  margin-top: -5px;
+  border-radius: 20px;
+}
+.table-addresult{
+  margin-top: 10px;
+  margin-left: 50px;
+  width: 70vw;
+}
+  @media only screen and (max-width:800px){
+      .flexing{
+          font-size: 13px;
+      }
+      .tableinput{
+        width: 120px;
+      }
+      .btnaddresult{
+        margin-top: 10px;
+      }
+      .table-addresult{
+        margin-left: 0;
+        width: 100vw;
+      }
+      .uploadbtn{
+        width: fit-content;
+        position: absolute;
+        right: 4px;
+      }
+.custominputresult{
+    width: 170px;
+    font-size: 14px;
+}
+.marginlforresult{
+margin-left: 10px;
+align-self: center;
+}
+.custominputresult{
+  margin-left: 10px;
+}
+  }

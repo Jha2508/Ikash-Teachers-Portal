@@ -64,7 +64,11 @@ h1{
     line-height: 100%;
     font-size: .9rem;
 }
+.chatbody{
+    overflow-y: scroll;
+    height: 500px;
 
+}
 .chat-list .chat-message p {
     line-height: 18px;
     margin: 0;

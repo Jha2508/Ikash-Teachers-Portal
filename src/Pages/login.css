@@ -18,7 +18,7 @@
   right:0
 }
 
-#headerTitle{
+.headerTitle{
   text-align: center;
   font-family: 'open sans', sans-serif;
   padding: 2rem 0;
@@ -40,7 +40,6 @@
   box-sizing: border-box;
 	border: none;
   font-size: 1.3rem;
-  padding-left: 1.5rem;
   padding-bottom: 1rem;
   box-shadow: inset 0px -3px 0px 0px rgba(187,187,187,0.2);
   transition: box-shadow 0.2s ease-in;
@@ -63,7 +62,6 @@
 
 .roge label{
   align-self: start;
-  padding-left: 4.5rem;
   padding-bottom: 0.5rem;
   color: rgba(187,187,187,0.9);
 }
@@ -89,42 +87,43 @@
 #button{
   padding-bottom: 1.5rem;
 }
-
-#facebookIcon{
-  background-image:      url("https://image.flaticon.com/icons/svg/145/145802.svg");
-  background-repeat: no-repeat;
-  width: 3rem;
-  height: 3rem;
+.vertcent{
+  height: 100vh;
+  margin-left: -300px;background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+.formsignin{
+  width: 600px;
+  top:20%;
+  border-radius: 30px;
 }
 
-#twitterIcon{
-  background-image: url("https://image.flaticon.com/icons/svg/145/145812.svg");
-  background-repeat: no-repeat;
-  width: 3rem;
-  height: 3rem;
+@media only screen and (max-width:800px){
+  .vertcent{
+    margin-left: 0;
+  }
+  .formsignin{
+    width:90vw;
+    border-radius: 50px;
+    top:10%
 }
-
-#googleIcon{
-  background-image: url("https://image.flaticon.com/icons/svg/145/145804.svg");
-  background-repeat: no-repeat;
-  width: 3rem;
-  height: 3rem;
+.roge input{
+  font-size: 13px;
 }
-
-#iconGroup{
-  display: flex;
-  justify-content: center;
-  padding: 2rem 0;
+.loginlogo{
+  width: 100px;
 }
-
-#iconGroup a{
-  margin: 0 0.6rem;
+.roge{
+  padding-top: 5px;
 }
-
-#alternativeLogin {
-   text-align: center;
-   padding-top: 2rem;
-   margin-top: 1.5rem;
+.roge label{
+  padding: 0;
 }
-
+#button {
+  padding-bottom: 5px;
+}
+.headerTitle{
+  padding: 10px;
+}
+}
 

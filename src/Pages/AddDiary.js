@@ -100,15 +100,11 @@ function AddDiary() {
                     <Tab>Add Homework</Tab>
                     <Tab >Add Remark</Tab>
                 </TabList>
-
                 <TabPanel>
-
                     <AddHomework />
                 </TabPanel>
                 <TabPanel>
-
                     <AddRemarks />
-
                 </TabPanel>
             </Tabs>
 

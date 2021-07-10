@@ -16,13 +16,16 @@ function Signin(props) {
 
   }
   return (
-    <>
+    <center className='vertcent'>
+    <div className='card formsignin'>
+    
+    
+    <h2 className="headerTitle">Login</h2>
       <div className='row'>
-        <div className='col-sm-6 signin'>
-          <img className='signinimg' src='https://media-exp1.licdn.com/dms/image/C560BAQG2NE4QbXdycw/company-logo_200_200/0/1593850485682?e=2159024400&v=beta&t=GHGiG6lpTULD0Yi_pk9yvA8kYBPBwOZe59r_oKg_5fg'alt='..'/>
+        <div className='col-sm-5'>
+          <img className='loginlogo' src='https://media-exp1.licdn.com/dms/image/C560BAQG2NE4QbXdycw/company-logo_200_200/0/1593850485682?e=2159024400&v=beta&t=GHGiG6lpTULD0Yi_pk9yvA8kYBPBwOZe59r_oKg_5fg'alt='..'/>
         </div>
-        <div className='col-sm-4'>
-        <h2 id="headerTitle">Login</h2>
+        <div className='col-sm-7'>
             <div>
               <div className="row roge">
                 <label>Username</label>
@@ -39,7 +42,8 @@ function Signin(props) {
         </div>
       </div>
     
-      </>
+      </div>
+      </center>
         )
 }
 

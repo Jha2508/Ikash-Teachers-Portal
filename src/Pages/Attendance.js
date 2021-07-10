@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Dashboard from '../Components/Dashboard'
 
 function SeeAttendance() {
@@ -48,6 +48,9 @@ function SeeAttendance() {
   
   
 function Attendance() {
+  const [Attenda, setAttenda] = useState(false)
+  const [Buttonstate, setButtonstate] = useState('See Attendance')
+
     return (
         <>
         <Dashboard/>
@@ -124,8 +127,8 @@ function Attendance() {
 
     <b>Date : </b>
     <input type="date" id="birthday" name="birthday" />
-    <button className='btn btn-outline-danger' style={{ marginLeft: '30px' }}>see atendance</button>
-    <SeeAttendance />
+    <button className='btn btn-outline-danger' style={{ marginLeft: '30px' }} onClick={()=>{setAttenda(!Attenda);setButtonstate('Hide Attendance')}}>{Buttonstate}</button>
+    {Attenda?<SeeAttendance />:null}
   </center>
   </>
         
